@@ -1,0 +1,3 @@
+D:/Demo/Operating-System-Task-Manager-Emulator/cmake-build-debug/CMakeFiles/Operating_System_Task_Manager_Emulator.dir
+D:/Demo/Operating-System-Task-Manager-Emulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Demo/Operating-System-Task-Manager-Emulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
