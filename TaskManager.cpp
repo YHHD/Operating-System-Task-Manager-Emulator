@@ -15,9 +15,9 @@ public:
 		CPU = NULL;
 		timeslice = 0;
 	}
-	void input(int PID, std::string PName, std::string UserID, int Priority, struct RunInfo PRunInfo) {
+	void input(int PID, std::string PName, std::string UserID, int Priority, struct RunInfo PRunInfo ,int size) {
 		//输入进程并创建
-		PM.createProcess(PID, PName, UserID, Priority, PRunInfo);
+		PM.createProcess(PID, PName, UserID, Priority, PRunInfo,size);
 	}
 	void allocateMemory() {
 		//尝试为新建进程中的每一个进程分配一次内存
@@ -73,7 +73,7 @@ int main() {
 	for (int i = 0; i < DEVICENUM; i++) {
 		ri.DeviceRunInfo[0][i] = ri.DeviceRunInfo[1][i] = 0;
 	}
-	TM.input(2, "aaa", "xbj", 3, ri);
+	TM.input(2, "aaa", "xbj", 3, ri,100);
 	TM.allocateMemory();
 	system("pause");
 	return 0;
